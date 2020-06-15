@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 
-
+driver_location = '' #Insert driver location here
 print("Enter number of users")
 n = int(input())
 
@@ -17,7 +17,7 @@ for i in range(n):
 
 
 
-driver = webdriver.Chrome('web_drivers/chromedriver.exe')
+driver = webdriver.Chrome(driver_location)
 driver.get("https://web.whatsapp.com")
 sleep(10)
 for username in users:
